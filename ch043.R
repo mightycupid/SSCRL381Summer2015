@@ -30,8 +30,46 @@ lastName <- factor("Kang")
 lastName
 nchar(lastName)
 
-myBirthDate1 <- as.Date("1991-03-09")
+myBirthDate1 <- as.Date("1991-04-01")
 myBirthDate1
 class(myBirthDate1)
 as.numeric(myBirthDate1)
 
+myBirthDate2 <- as.Date("04-01-1991")
+myBirthDate2
+class(myBirthDate2)
+as.numeric(myBirthDate2)
+
+myBirthDate3 <- as.Date("01-04-1991")
+myBirthDate3
+class(myBirthDate3)
+as.numeric(myBirthDate3)
+
+# Date Time Data Type - POSIXct() - Portable Operating System Interface Conformance Test
+appointment1 <- as.POSIXct("2015-07-03 12:30")
+appointment1
+class(appointment1)
+as.numeric(appointment1)
+	
+# Logical Data Type
+TRUE
+TRUE * 5
+class(TRUE)
+
+FALSE
+FALSE * 5
+class(FALSE)
+
+k <- TRUE
+k
+class(k)
+is.logical(k)
+	
+2 == 3
+2 != 3
+2 < 3
+2 <= 3
+2 > 3
+2 >= 3
+"data" == "stats"
+"data" < "stats"
